@@ -1,0 +1,101 @@
+#works{
+ min-height: calc(100vh-4rem);
+ width: 100vw;
+ display: flex;
+ flex-direction: column;
+ max-width: 80rem;
+ align-items: center;
+ justify-content: center;
+ margin: 0 auto;
+ text-align: center;
+ padding: 0 1rem;
+}
+
+
+.workDiv {
+    margin-top: 4rem;
+}
+
+.projContent {
+
+    margin-top: -5rem;
+    top: 0;
+}
+.project {
+  background-color: #fff;
+  color: #444;
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  margin: 8px;
+  max-width: 315px;
+  min-width: 230px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.project * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+}
+
+.project:after {
+  background-color: #359ad8;
+  height: 150%;
+  bottom: -145%;
+  content: '';
+  left: 0;
+  right: 0;
+  position: absolute;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.project img {
+    width: 400px;
+    height: 200px;
+    vertical-align: top;
+  max-width: 100%;
+  backface-visibility: hidden;
+}
+
+.project>p {
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+
+.project:hover > img {
+  opacity: 0.1;
+}
+
+.project:hover:after {
+  bottom: 95%;
+}
+
+.project:hover .projContent {
+  opacity: 1;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+.showproject {
+    border-width: 0.1rem;
+    margin-bottom: 2rem;
+    border-color: #444;
+    border-style: solid;
+    width: auto;
+    font-size: medium;
+    font-weight: 500;
+    height: 15px;
+    padding: 0 1rem;
+    border-radius: 0.5vw;
+}
+
