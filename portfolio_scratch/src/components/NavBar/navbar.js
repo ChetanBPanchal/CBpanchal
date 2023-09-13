@@ -3,6 +3,8 @@ import './navbar.css'
 import logo from '../../assets/logo.png'
 import contact from '../../assets/messages.png'
 import { Link } from 'react-scroll'
+import { PiDownloadBold } from 'react-icons/pi'
+
 
 const Navbar = () => {
   return (
@@ -14,9 +16,7 @@ const Navbar = () => {
             <Link className='naveMenuListItems'>Portfolio</Link>
             <Link className='naveMenuListItems'>Contact</Link>
         </div> 
-        <button className='navMenuBtn'>
-            <img src={contact} alt='Contact me' className='navmenuimg' />Contact Me
-        </button>
+        <button className='navMenuBtn'> <PiDownloadBold className='downloadicon'/> <p className='downloadtxt'>Download CV</p> </button>
     </nav>
   )
 }

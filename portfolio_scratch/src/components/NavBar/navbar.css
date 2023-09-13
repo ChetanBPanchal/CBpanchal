@@ -1,7 +1,12 @@
+:root {
+    --navBarColor: '#62fbd7',
+    --backgroundColor: #09192f,
+}
+
 .navbar{
-    background: rgb(30, 30, 30);
-    
+    background: #09192f;
     height: 5rem;
+    max-width: 95%;
     width: 100vw;
     margin: 0 auto;
     padding: 1rem 2rem;
@@ -11,6 +16,7 @@
     position: sticky;
     top: 0;
     z-index: 3;   
+    box-shadow: 0px 2px 2px  #08182D;
 }
 
 .logo {
@@ -20,29 +26,40 @@
 }
 
 .naveMenuListItems {
+    color: #c6d0f0;
     margin: 1rem;
     cursor: pointer;
 }
 
 .naveMenuListItems:hover {
-    color: #f58a1e;
+    color: #5ef1cf;
     padding-bottom: 0.5rem;
-    border-bottom: 3px solid #ff840a;
+    border-bottom: 3px solid #5ef1cf;
     margin: 1rem;
     cursor: pointer;
 }
 
 .navMenuBtn {
-    background: WHITE;
-    color: black;
-    border: none;
+    font-size: medium;
+    font-weight: 400;
+    background: transparent;
+    color: #5ef1cf;
+    border: solid 0.05rem #5ef1cf;
     display: flex;
+    border-radius: 0.2rem;
     align-items: center;
     justify-content: center;
-    padding: 0 1rem;
-    border-radius: 2rem;
+    padding: 0.4rem 0.5rem;
 }
 
+
+.downloadicon {
+    font-size: 20px;
+}
+
+.downloadtxt {
+    margin-left: 0.5rem;
+}
 .navmenuimg {
     object-fit: cover;
     height: 1rem;

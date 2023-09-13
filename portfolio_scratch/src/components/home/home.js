@@ -8,8 +8,10 @@ const Home = () => {
   return (
     <section id='home'>
       <div className='homeContent'>
+        <div className='helloName'>
         <span className='hello'>Hello,</span>
         <span className='introtxt'>I'm <span className='introname'>Chetan Panchal</span><br/> <span className='positions'>Android Developer</span></span>
+        </div>
         <p className='intropara'>A Software Developer Skilled in Android Developement <br/> with 4+ Years of hand-on Experience.</p>
         <Link><button className='btn'><img src={ btnImage } alt='Hire me' className='btnimgh'/>Hire me</button></Link>
       </div>
